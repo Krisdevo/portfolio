@@ -1,0 +1,106 @@
+.banner {
+    width: 100%;
+    height: 600px;
+    background: radial-gradient(circle at 30% 30%,
+            #4fd6a1 0%,
+            #3a9cc0 25%,
+            #4e53d4 60%,
+            #1f2b9b 85%,
+            #0f2763 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .terminal {
+        height: 400px;
+        width: 100%;
+        backdrop-filter: blur(8px);
+        background: rgba(11, 29, 46, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 6px 8px 0 #0000006c;
+
+        .pic-container {
+            width: 45%;
+
+            img {
+                background-image: center/cover;
+                width: 9rem;
+                height: 9rem;
+            }
+        }
+
+
+
+        .terminal-text {
+            width: 55%;
+            color: #4fd6a1;
+            font-size: 0.8rem;
+            font-weight: 600;
+            line-height: 1.5;
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            .cursor {
+                display: inline-block;
+                width: 10px;
+                height: 1.2em;
+                background: #4fd6a1;
+                margin-left: 4px;
+                vertical-align: text-bottom;
+                animation: blink 1s step-end infinite;
+            }
+
+            @keyframes blink {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .cta-group {
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .btn{
+            cursor: pointer;
+            padding: 0.8rem 1.5rem;
+            background: $btn;
+            color: white;
+            font-weight: 600;
+            border: 1px solid $green;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: $green;
+                color: #fff;
+            }
+        }
+
+    }
+}
