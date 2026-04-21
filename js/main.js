@@ -54,7 +54,7 @@ function startTypewriter() {
       if (charIndex < fullText.length) {
         currentP.textContent += fullText.charAt(charIndex);
         charIndex++;
-        setTimeout(typeWriter, 40); // vitesse par caractère
+        setTimeout(typeWriter, 20); // vitesse par caractère
       } else {
         pIndex++;
         charIndex = 0;
@@ -66,6 +66,8 @@ function startTypewriter() {
       const cursor = document.createElement("span");
       cursor.classList.add("cursor");
       lastP.appendChild(cursor);
+
+      document.dispatchEvent(new CustomEvent("typewriterDone"));
     }
   }
 
