@@ -3,7 +3,7 @@
 tsParticles.load("tsparticles", {
     particles: {
         number: {
-            value: 100, // nombre de particules
+            value: 150, // nombre de particules
         },
         color: {
             value: ["#4fd6a1", "#19A3E3"]
