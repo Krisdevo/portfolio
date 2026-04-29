@@ -1,0 +1,178 @@
+@import '../variables/colors';
+@import '../variables/font';
+
+#portfolio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin: 2rem auto;
+
+    }
+
+    a {
+        text-align: center;
+    }
+
+
+
+    .card_container {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        width: 100%;
+
+        .card {
+
+            background-color: $transparent;
+            border: 1px solid $green;
+            border-radius: 1rem;
+            width: 100%;
+            min-height: 700px;
+            height: auto;
+            padding: 0.5rem;
+
+            .card_header {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+
+                img {
+                    width: 50px;
+                    height: 60px;
+
+                }
+
+                .header_text {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.2rem;
+
+                    h2 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .img_wrapper {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card_action {
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1rem;
+
+                button {
+                    border-radius: 0.5rem;
+                    width: 30%;
+                    height: auto;
+                    padding: 0.5rem;
+                    background-color: $transparent;
+                    opacity: 0.4;
+                    transition: opacity 0.3s ease;
+
+                    &.active {
+                        opacity: 1;
+                    }
+
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .card_content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 0.5rem;
+
+               .card_description,
+                .card_tools,
+                .card_links {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+
+                    &.hidden {
+                        display: none !important; // ← le !important écrase le display: flex
+                    }
+                }
+
+                .card_description {
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
+                }
+
+                .card_tools{
+                    h3 {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+
+                        li {
+                            margin-bottom: 0.5rem;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+
+                .hidden {
+                    display: none !important;
+                }
+
+                .active {
+                    display: flex; // ← flex et non block puisque ces divs sont en flex
+                }
+            }
+        }
+    }
+}

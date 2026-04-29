@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio en ligne de Christopher Devaux (Krisdevo), développeur web spécialisé dans les sites vitrinces pour artisans et PME">
+    <title>Krisdevo - Portfolio</title>
+    <link rel="icon" href="./images/icone.png">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="tsparticles"></div>
+    <a href="#" class="scroll-haut">▲</a>
+
+
+    <header>
+
+        <div class="header-top">
+            <img src="./images/logo.png" alt="Logo du site" class="logo">
+            <p>Concepteur de sites web</p>
+        </div>
+
+
+        <!-- MENU BURGER -->
+        <div id="burger">
+            <a href="#burger" id="open">≡</a>
+            <a href="#" id="close">×</a>
+
+            <nav class="burger-nav">
+                <a href="index.html">Accueil</a>
+                <a href="profil.html">Profil</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- NAVIGATION CLASSIQUE -->
+        <nav class="desktop-nav">
+            <a href="index.html">Accueil</a>
+            <a href="profil.html">Profil</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="portfolio">
+            <h1>Mon Portfolio</h1>
+            <p>Je construis au fur et à mesure voici ce que j'ai réalisé jusqu'ici. Des projets concrets, des clients
+                réels pour certains. Chaque projet raconte une histoire différente.</p>
+            <div class="card_container">
+                <div class="card">
+                    <div class="card_header">
+                        <img src="./images/rupee.gif" alt="rubis pixel art">
+                        <div class="header_text">
+                            <h2>Site vitrine simple (One Page)</h2>
+                            <h3>Le pétrin Bisontin</h3>
+                        </div>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="./images/boulangerie.png" alt="site vitrine du pétrin bisontin">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_action">
+                            <button><img src="./images/description.png" alt="Voir la description"></button>
+                            <button><img src="./images/tools.png" alt="Voir les outils utilisés"></button>
+                            <button><img src="./images/links.png" alt="Voir les liens"></button>
+                        </div>
+                        <div class="card_description card_tab active">
+                            <p>Site vitrine one page réalisé pour une boulangerie artisanale fictive dans le cadre de ma
+                                formation. L'objectif était simple, une présence web claire et accessible pour un
+                                artisan local : les produits, les horaires, la localisation et un formulaire de contact.
+                                Un projet pensé pour les petits budgets qui veulent être visibles sur le web sans se
+                                ruiner.
+                            </p>
+                        </div>
+                        <div class="card_tools card_tab hidden">
+                            <h3>Outils utilisés :</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap (Carousel)</li>
+                            </ul>
+                        </div>
+                        <div class="card_links card_tab hidden">
+                            <a href="#" target="_blank" class="btn btn-primary">Voir le projet sur GitHub</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">Voir le site en ligne</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/portfolio.js"></script>   
+</body>
+
+</html>

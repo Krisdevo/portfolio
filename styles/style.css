@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -632,23 +633,24 @@ footer p {
 }
 #services .card_container .card {
   background-color: rgba(0, 0, 0, 0.42);
+  border: 1px solid #4FD6A1;
   border-radius: 1rem;
   width: 100%;
-  min-height: 843px;
+  min-height: 700px;
   height: auto;
   padding: 0.5rem;
 }
 #services .card_container .card .img_wrapper {
   margin-top: 1rem;
   width: 100%;
-  height: 230px;
+  height: 150px;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #services .card_container .card .img_wrapper img {
-  width: 150px;
+  width: 100px;
   height: auto;
   border-radius: 1rem 1rem 0 0;
 }
@@ -753,4 +755,145 @@ footer p {
   #services .card_container .card .card_content ul li {
     font-size: 0.9rem;
   }
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#portfolio p {
+  margin: 2rem auto;
+}
+#portfolio a {
+  text-align: center;
+}
+#portfolio .card_container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+#portfolio .card_container .card {
+  background-color: rgba(0, 0, 0, 0.42);
+  border: 1px solid #4FD6A1;
+  border-radius: 1rem;
+  width: 100%;
+  min-height: 700px;
+  height: auto;
+  padding: 0.5rem;
+}
+#portfolio .card_container .card .card_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+#portfolio .card_container .card .card_header img {
+  width: 50px;
+  height: 60px;
+}
+#portfolio .card_container .card .card_header .header_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+#portfolio .card_container .card .card_header .header_text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#portfolio .card_container .card .card_header .header_text h3 {
+  font-size: 1.2rem;
+}
+#portfolio .card_container .card .img_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .card_container .card .img_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#portfolio .card_container .card .card_action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+#portfolio .card_container .card .card_action button {
+  border-radius: 0.5rem;
+  width: 30%;
+  height: auto;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.42);
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+#portfolio .card_container .card .card_action button.active {
+  opacity: 1;
+}
+#portfolio .card_container .card .card_action button img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#portfolio .card_container .card .card_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+#portfolio .card_container .card .card_content .card_description,
+#portfolio .card_container .card .card_content .card_tools,
+#portfolio .card_container .card .card_content .card_links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#portfolio .card_container .card .card_content .card_description.hidden,
+#portfolio .card_container .card .card_content .card_tools.hidden,
+#portfolio .card_container .card .card_content .card_links.hidden {
+  display: none !important;
+}
+#portfolio .card_container .card .card_content .card_description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+#portfolio .card_container .card .card_content .card_tools h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#portfolio .card_container .card .card_content .card_tools ul {
+  list-style-type: none;
+  padding: 0;
+}
+#portfolio .card_container .card .card_content .card_tools ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+#portfolio .card_container .card .card_content .hidden {
+  display: none !important;
+}
+#portfolio .card_container .card .card_content .active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
