@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio en ligne de Christopher Devaux (Krisdevo), développeur web spécialisé dans les sites vitrinces pour artisans et PME">
+    <title> Krisdevo - Profil </title>
+    <link rel="icon" href="./images/icone.png">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="tsparticles"></div>
+    <a href="#" class="scroll-haut">▲</a>
+
+
+    <header>
+
+        <div class="header-top">
+            <img src="./images/logo.png" alt="Logo du site" class="logo">
+            <p>Concepteur de sites web</p>
+        </div>
+
+
+        <!-- MENU BURGER -->
+        <div id="burger">
+            <a href="#burger" id="open">≡</a>
+            <a href="#" id="close">×</a>
+
+            <nav class="burger-nav">
+                <a href="index.html">Accueil</a>
+                <a href="profil.html" class="active">Profil</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- NAVIGATION CLASSIQUE -->
+        <nav class="desktop-nav">
+            <a href="index.html">Accueil</a>
+            <a href="profil.html" class="active">Profil</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h1>Services détaillés</h1>
+            <p>Chaque projet est différent,
+                mais l'objectif reste le même : vous livrer quelque chose qui fonctionne, qui vous ressemble et dont
+                vous êtes fier. Voici comment je peux vous accompagner.</p>
+
+            <div class="card_container">
+                <div class="card">
+                    <div class="img_wrapper">
+                        <img src="./images/vitrine.png" alt="logo site vitrine">
+                    </div>
+                    <div class="card_content">
+                        <h3>Site Vitrine</h3>
+                        <h4>Un site à votre image, pensé pour vos clients</h4>
+                        <p>Je conçois des sites vitrines sur mesure en HTML/CSS/JS ou WordPress,
+                            adaptés à votre activité et optimisés pour tous les écrans. Chaque projet est pensé pour
+                            refléter votre identité et convaincre vos visiteurs de vous contacter.
+                        </p>
+                        <div class="service_list">
+                            <ul>
+                                <li>✓ Design personnalisé</li>
+                                <li>✓ Responsive mobile et desktop </li>
+                                <li>✓ Optimisation pour les moteurs de recherche (SEO)</li>
+                                <li>✓ Formulaire de contact intégré</li>
+                                <li>✓ Mise en ligne et configuration</li>
+                                <li>✓ Mentions légales incluses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img_wrapper">
+                        <img src="./images/wordpress.png" alt="logo site wordpress">
+                    </div>
+                    <div class="card_content">
+                        <h3>Refonte & Maintenance WordPress</h3>
+                        <h4>Votre site entre de bonnes mains</h4>
+                        <p>Votre site WordPress a besoin d'un coup de neuf ou simplement d'un suivi régulier ?
+                            Je prends en charge la refonte visuelle et la maintenance pour que votre site reste
+                            moderne, performant et sécurisé.
+                        </p>
+                        <div class="service_list">
+                            <ul>
+                                <li>✓ Refonte visuelle</li>
+                                <li>✓ Personnalisation du thème</li>
+                                <li>✓ Mises à jour plugins et thèmes</li>
+                                <li>✓ Sauvegardes régulières </li>
+                                <li>✓ Corrections et modifications </li>
+                                <li>✓ Suivi et support réactif</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="btn">Voir mon portfolio</a>
+            </div>
+        </section>
+        <section id="recruit">
+            <h2>Vous recrutez ?</h2>
+            <p>C'est lors de ma formation au Titre Professionnel Développeur Web et Web Mobile que tout s'est mis en
+                place. En quelques mois, j'ai découvert un métier qui demande autant de logique que de créativité et
+                j'ai compris que c'était exactement là où je voulais être.
+                Pour vous montrer de quoi je peux être capable, je vous présente un projet qui me tient à coeur et que
+                j’aimerais porter jusqu’au bout.
+            </p>
+            <span class="clotho_title">CLOTHO</span>
+            <img src="./images/clotho.png" alt="Screenshot de l'application Clotho">
+            <p>Clotho est né d'un besoin personnel : en tant que joueur de jeux de rôle, je cherchais un outil pour
+                gérer mes campagnes sans me perdre dans des notes éparpillées. Ne trouvant rien qui me convenait
+                vraiment, j'ai décidé de le construire moi-même.
+                Techniquement c'est mon projet le plus complet à ce jour. Le backend tourne sous Symfony avec une base
+                de donnée gérée via Doctrine ORM.
+                L'environnement est conteneurisé avec Docker et chaque mise en production se fait automatiquement via
+                une pipeline CI/CD GitHub Actions : je pousse mon code, le reste se fait tout seul.
+                Côté fonctionnalités : gestion de personnages avec upload d'images, système de quêtes, bestiaire, lore,
+                notes personnelles, éditeur de texte riche, et un tableau de bord centralisé.
+                L'interface est volontairement sombre et immersive pour coller à l'univers du jeu de rôle.
+                Le projet est encore actif , j'y ajoute des fonctionnalités régulièrement et je soigne autant la qualité
+                du code que l'expérience utilisateur.
+                L'objectif à terme est de le commercialiser en freemium, avec un accès gratuit aux fonctions de base et
+                des options avancées en abonnement.
+                C'est le projet dont je suis le plus fier il n’est pas parfait, mais parce il est réel et en évolution
+                constante.
+            </p>
+            <a href="https://clotho.fr/" target="_blank" class="btn">Découvrir Clotho</a>
+            <h3>Ce que je recherche</h3>
+            <p>Je recherche un poste dans la région de Besançon, idéalement au sein d'une agence web ou de
+                communication, où je pourrais continuer à apprendre aux côtés d'une équipe, progresser sur des projets
+                concrets et apporter ma rigueur et mon investissement.
+            </p>
+            <a href="#" class="btn">Me contacter</a>
+        </section>
+    </main>
+    <footer>
+        <div class="social_link">
+            <a href="https://www.linkedin.com/in/christopher-devaux/" target="_blank"><img src="./images/linkedin.png"
+                    alt="Logo LinkedIn"></a>
+            <a href="https://github.com/Krisdevo" target="_blank"><img src="./images/github.png" alt="Logo GitHub"></a>
+        </div>
+        <p>© 2026 Christopher Devaux <br> Tous droits réservés</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

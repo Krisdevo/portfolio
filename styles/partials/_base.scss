@@ -95,3 +95,25 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
+
+section {
+
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    color: white;
+
+
+
+    p {
+        margin: auto;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+         width: 1000px;
+    }
+
+}

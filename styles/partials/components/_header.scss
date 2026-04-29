@@ -85,6 +85,10 @@ header {
                     transform-origin: left;
                 }
              }
+
+             .active{
+               color: $green;
+             }
          }
 
     }
