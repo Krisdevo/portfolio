@@ -91,13 +91,13 @@
 
                 width: 100%;
                 display: flex;
-                justify-content: center;
-                gap: 1rem;
+                justify-content: space-evenly;
+
                 padding: 1rem;
 
                 button {
                     border-radius: 0.5rem;
-                    width: 30%;
+                    width: 20%;
                     height: auto;
                     padding: 0.5rem;
                     background-color: $transparent;

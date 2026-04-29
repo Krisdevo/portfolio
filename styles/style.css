@@ -830,13 +830,12 @@ footer p {
 #portfolio .card_container .card .card_action {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 #portfolio .card_container .card .card_action button {
   border-radius: 0.5rem;
-  width: 30%;
+  width: 20%;
   height: auto;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.42);
