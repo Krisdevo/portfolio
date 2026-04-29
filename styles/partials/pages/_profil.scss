@@ -8,8 +8,9 @@
         margin-bottom: 2rem;
     }
 
-    p{
+    p {
         margin: 2rem auto;
+        text-align: center;
     }
 
     .card_container {
@@ -26,11 +27,11 @@
             border-radius: 1rem;
             width: 100%;
             min-height: 600px;
-            padding : 0.5rem;
+            padding: 0.5rem;
 
 
             .img_wrapper {
-                margin-top: 2rem;
+                margin-top: 1rem;
                 width: 100%;
                 height: 230px;
                 border-radius: 1rem;
@@ -39,7 +40,7 @@
                 align-items: center;
 
                 img {
-                    width: 75%;
+                    width: 150px;
                     height: auto;
                     border-radius: 1rem 1rem 0 0;
                 }
@@ -64,21 +65,61 @@
                     font-size: 0.8rem;
                 }
 
-                ul{
+                ul {
 
                     list-style: none;
                     font-size: 0.8rem;
 
-                    li{
+                    li {
                         font-weight: bold;
-                        color : $green;
+                        color: $green;
                         margin: 0.5rem 0;
+
                     }
+
+
                 }
 
 
             }
 
         }
+    }
+}
+
+#recruit{
+
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        margin: 2rem auto;
+    }
+
+    img{
+
+        width: 100%;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+    .clotho_title{
+
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'Cinzel Decorative';
+        color : $clotho;
+        margin-top: 2rem;
+    }
+
+    a{
+        margin: 2rem auto;
+        align-self: center;
+    }
+
+    h3{
+        margin-top: 2.5rem;
     }
 }

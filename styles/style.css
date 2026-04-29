@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -613,6 +613,7 @@ footer p {
 }
 #services p {
   margin: 2rem auto;
+  text-align: center;
 }
 #services .card_container {
   display: flex;
@@ -629,7 +630,7 @@ footer p {
   padding: 0.5rem;
 }
 #services .card_container .card .img_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
   height: 230px;
   border-radius: 1rem;
@@ -638,7 +639,7 @@ footer p {
   align-items: center;
 }
 #services .card_container .card .img_wrapper img {
-  width: 75%;
+  width: 150px;
   height: auto;
   border-radius: 1rem 1rem 0 0;
 }
@@ -667,4 +668,31 @@ footer p {
   font-weight: bold;
   color: #4FD6A1;
   margin: 0.5rem 0;
+}
+
+#recruit h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#recruit p {
+  margin: 2rem auto;
+}
+#recruit img {
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+#recruit .clotho_title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Cinzel Decorative";
+  color: #F59E0B;
+  margin-top: 2rem;
+}
+#recruit a {
+  margin: 2rem auto;
+  align-self: center;
+}
+#recruit h3 {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
