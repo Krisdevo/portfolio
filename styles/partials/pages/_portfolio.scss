@@ -87,6 +87,76 @@
                 }
             }
 
+            .carousel {
+                position: relative;
+                overflow: hidden;
+                border-radius: 0.5rem;
+
+                .carousel_track {
+                    display: flex;
+                    transition: transform 0.5s ease;
+
+                    .carousel_slide {
+                        min-width: 100%;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+
+                        .carousel_caption {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            padding: 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            color: white;
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            letter-spacing: 0.05em;
+                        }
+                    }
+                }
+
+                .carousel_prev,
+                .carousel_next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.5);
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                    z-index: 2;
+                    padding: 0.3rem;
+
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                        display: block;
+                    }
+
+                    &:hover {
+                        color: #4fd6a1;
+                    }
+                }
+
+                .carousel_prev {
+                    left: 0.5rem;
+                }
+
+                .carousel_next {
+                    right: 0.5rem;
+                }
+
+            }
+
             .card_action {
 
                 width: 100%;
@@ -154,7 +224,6 @@
                     }
 
                     ul {
-                        list-style-type: none;
                         padding: 0;
 
                         li {
@@ -176,4 +245,23 @@
         }
     }
 
+}
+
+#cta_contact {
+    background-color: $transparent;
+    border: 1px solid $green;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
 }
