@@ -111,14 +111,40 @@ gsap.from("#recruit p:not(.clotho_title):not(:first-of-type)", {
     ease: "power2.out"
 });
 
-gsap.from("#recruit a[href*='clotho']", {
+gsap.set(".btn_clotho, .btn_cv, .btn_contact", { opacity: 0, y: 20 });
+
+gsap.to(".btn_clotho", {
     scrollTrigger: {
-        trigger: "#recruit a[href*='clotho']",
+        trigger: ".btn_clotho",
         start: "top 90%",
     },
-    opacity: 0,
-    y: 20,
+    opacity: 1,
+    y: 0,
     duration: 0.8,
+    ease: "power2.out"
+});
+
+gsap.to(".btn_cv", {
+    scrollTrigger: {
+        trigger: ".links_box",
+        start: "top 90%",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    delay: 0.1,
+    ease: "power2.out"
+});
+
+gsap.to(".btn_contact", {
+    scrollTrigger: {
+        trigger: ".links_box",
+        start: "top 90%",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    delay: 0.2,
     ease: "power2.out"
 });
 
@@ -146,17 +172,5 @@ gsap.to(".search_text", {
     y: 0,
     duration: 0.8,
     delay: 0.2,
-    ease: "power2.out"
-});
-
-gsap.from("#recruit a:last-of-type", {
-    scrollTrigger: {
-        trigger: "#recruit a:last-of-type",
-        start: "top 90%",
-    },
-    opacity: 0,
-    y: 20,
-    duration: 0.8,
-    delay: 0.3,
     ease: "power2.out"
 });
