@@ -265,3 +265,56 @@
         margin-bottom: 1.5rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    #portfolio {
+
+        .card_container {
+
+
+            .card {
+                width: 60%;
+                min-height: 500px;
+
+                .card_header {
+                    flex-direction: row;
+                    gap: 2rem;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    img{
+                        width: 60px;
+                        height: 80px;
+                    }
+
+                    .header_text {
+                        align-items: flex-start;
+
+                        h2{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #portfolio {
+
+        .card_container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+
+            .card {
+                width: 45%;
+                min-height: 500px;
+            }
+        }
+    }
+    
+}
