@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="icon" href="./images/icone.png">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <div id="tsparticles"></div>
     <a href="#" class="scroll-haut">▲</a>
@@ -28,7 +30,7 @@
 
             <nav class="burger-nav">
                 <a href="index.html">Accueil</a>
-                <a href="profil.html" >Profil</a>
+                <a href="profil.html">Profil</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html" class="active">Contact</a>
             </nav>
@@ -42,11 +44,64 @@
             <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
+    <main>
+        <section id="intro">
+            <h1>Discutons de votre projet !</h1>
+            <p>Vous avez un projet en tête, une question ou une opportunité à me soumettre ?
+                N'hésitez pas à me décrire votre besoin même une idée floue est un bon point de départ. Pour les
+                demandes de devis,
+                plus vous me donnez de détails, plus je pourrai vous proposer quelque chose d'adapté à votre budget et
+                vos objectifs.
+            </p>
+        </section>
+        <section id="contact">
+            <section id="contact">
+                <form id="contact_form">
+                    <div class="form_group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Choisissez un sujet</option>
+                            <option value="Projet web">Projet web</option>
+                            <option value="Maintenance WordPress">Maintenance WordPress</option>
+                            <option value="Montage vidéo">Montage vidéo</option>
+                            <option value="Recrutement">Recrutement</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submit_btn">Envoyer le message</button>
+                    <p id="form_status"></p>
+                </form>
+                <div class="contact_info">
+                    <a href="mailto:contact@krisdevo.fr">
+                        <img src="./images/email.png" alt="Email">
+                        <span>contact@krisdevo.fr</span>
+                    </a>
+                </div>
+            </section>
+
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
+
 </html>
