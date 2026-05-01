@@ -54,7 +54,7 @@ function startTypewriter() {
       if (charIndex < fullText.length) {
         currentP.textContent += fullText.charAt(charIndex);
         charIndex++;
-        setTimeout(typeWriter, 20); // vitesse par caractère
+        setTimeout(typeWriter, 10); // vitesse par caractère
       } else {
         pIndex++;
         charIndex = 0;
