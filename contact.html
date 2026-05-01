@@ -82,6 +82,9 @@
                         <textarea id="message" name="message" rows="6"
                             placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
                     </div>
+                    <!-- Honeypot - invisible pour les humains -->
+                    <input type="text" name="honeypot" id="honeypot" style="display:none" tabindex="-1"
+                        autocomplete="off">
                     <button type="submit" class="btn" id="submit_btn">Envoyer</button>
                     <p id="form_status"></p>
                 </form>
@@ -103,7 +106,7 @@
             </section>
         </section>
     </main>
-        <footer>
+    <footer>
         <div class="social_link">
             <a href="https://www.linkedin.com/in/christopher-devaux/" target="_blank"><img src="./images/linkedin.png"
                     alt="Logo LinkedIn"></a>
