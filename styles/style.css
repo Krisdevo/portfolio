@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -1019,4 +1020,154 @@ footer p {
     width: 45%;
     min-height: 500px;
   }
+}
+#intro p {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin: auto;
+  line-height: 1.6;
+}
+
+#contact {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#contact form h2 {
+  font-size: 2rem;
+}
+#contact form .form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contact form .form_group label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+#contact form .form_group input,
+#contact form .form_group select,
+#contact form .form_group textarea {
+  background: rgba(15, 20, 60, 0.5);
+  border: 1px solid rgba(79, 214, 161, 0.2);
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+#contact form .form_group input::-moz-placeholder, #contact form .form_group select::-moz-placeholder, #contact form .form_group textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+#contact form .form_group input::placeholder,
+#contact form .form_group select::placeholder,
+#contact form .form_group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+#contact form .form_group input:focus,
+#contact form .form_group select:focus,
+#contact form .form_group textarea:focus {
+  border-color: rgba(79, 214, 161, 0.8);
+  box-shadow: 0 0 12px rgba(79, 214, 161, 0.15);
+}
+#contact form .form_group select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234fd6a1' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+  padding-right: 2.5rem;
+}
+#contact form .form_group select option {
+  background: #1a1a3e;
+  color: white;
+}
+#contact form .form_group textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: inherit;
+}
+#contact form #submit_btn {
+  align-self: flex-start;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #4FD6A1;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+#contact form #submit_btn:hover {
+  background: #4FD6A1;
+  color: #0f2763;
+}
+#contact form #submit_btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#contact form #form_status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  min-height: 1.5rem;
+}
+#contact .contact_info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact .contact_info .title_contact_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+#contact .contact_info .title_contact_info h2 {
+  font-size: 2rem;
+}
+#contact .contact_info .title_contact_info .trait {
+  width: 30%;
+  height: 1px;
+  background-color: #4FD6A1;
+  justify-self: center;
+  margin-bottom: 1rem;
+}
+#contact .contact_info a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 1.5rem 0;
+}
+#contact .contact_info a img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#contact .contact_info a:hover {
+  color: #4FD6A1;
 }/*# sourceMappingURL=style.css.map */

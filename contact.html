@@ -47,7 +47,7 @@
     <main>
         <section id="intro">
             <h1>Discutons de votre projet !</h1>
-            <p>Vous avez un projet en tête, une question ou une opportunité à me soumettre ?
+            <p>Vous avez un projet en tête, une question ou une opportunité à me soumettre?<br>
                 N'hésitez pas à me décrire votre besoin même une idée floue est un bon point de départ. Pour les
                 demandes de devis,
                 plus vous me donnez de détails, plus je pourrai vous proposer quelque chose d'adapté à votre budget et
@@ -57,6 +57,7 @@
         <section id="contact">
             <section id="contact">
                 <form id="contact_form">
+                    <h2>Contactez-moi</h2>
                     <div class="form_group">
                         <label for="name">Nom</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom" required>
@@ -81,19 +82,35 @@
                         <textarea id="message" name="message" rows="6"
                             placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
                     </div>
-                    <button type="submit" class="btn" id="submit_btn">Envoyer le message</button>
+                    <button type="submit" class="btn" id="submit_btn">Envoyer</button>
                     <p id="form_status"></p>
                 </form>
                 <div class="contact_info">
+                    <div class="title_contact_info">
+                        <div class="trait"></div>
+                        <h2>OU</h2>
+                        <div class="trait"></div>
+                    </div>
                     <a href="mailto:contact@krisdevo.fr">
-                        <img src="./images/email.png" alt="Email">
-                        <span>contact@krisdevo.fr</span>
+                        <img src="./images/mail.png" alt="Email">
+                        <span>krisdevo@outlook.com</span>
+                    </a>
+                    <a href="tel:+33612345678">
+                        <img src="./images/phone.png" alt="Téléphone">
+                        <span> 06 12 27 42 53</span>
                     </a>
                 </div>
             </section>
-
         </section>
     </main>
+        <footer>
+        <div class="social_link">
+            <a href="https://www.linkedin.com/in/christopher-devaux/" target="_blank"><img src="./images/linkedin.png"
+                    alt="Logo LinkedIn"></a>
+            <a href="https://github.com/Krisdevo" target="_blank"><img src="./images/github.png" alt="Logo GitHub"></a>
+        </div>
+        <p>© 2026 Christopher Devaux <br> Tous droits réservés</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
