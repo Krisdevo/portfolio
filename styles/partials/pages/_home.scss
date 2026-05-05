@@ -131,6 +131,9 @@
             border-radius: 1rem;
             width: 100%;
             min-height: 600px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
 
 
             .img_wrapper {
@@ -430,7 +433,7 @@
             justify-content: space-evenly;
 
             .card {
-                width: 30%;
+                width: 35%;
                 height: 710px;
             }
         }
