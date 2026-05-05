@@ -68,16 +68,6 @@ gsap.from("#preview_services .card", {
     stagger: 0.2
 });
 
-gsap.from(".to_the_portfolio", {
-    scrollTrigger: {
-        trigger: ".to_the_portfolio",
-        start: "top 85%",
-    },
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    ease: "power2.out"
-});
 
 // Section Compétences — titre puis cards en stagger
 gsap.from("#preview_abilities h2", {
