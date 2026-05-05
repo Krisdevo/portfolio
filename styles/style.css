@@ -829,6 +829,7 @@ footer p {
 }
 #portfolio .card_container .card .card_header .header_text h3 {
   font-size: 1.2rem;
+  text-align: center;
 }
 #portfolio .card_container .card .img_wrapper {
   width: 100%;
@@ -1009,7 +1010,7 @@ footer p {
   #portfolio .card_container .card .card_header .header_text {
     align-items: flex-start;
   }
-  #portfolio .card_container .card .card_header .header_text h2 {
+  #portfolio .card_container .card .card_header .header_text h2, #portfolio .card_container .card .card_header .header_text h3 {
     text-align: left;
   }
 }

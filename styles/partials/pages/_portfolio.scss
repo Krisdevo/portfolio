@@ -69,6 +69,7 @@
 
                     h3 {
                         font-size: 1.2rem;
+                        text-align: center;
                     }
                 }
             }
@@ -290,9 +291,11 @@
                     .header_text {
                         align-items: flex-start;
 
-                        h2{
+                        h2, h3{
                             text-align: left;
                         }
+
+
                     }
                 }
             }
