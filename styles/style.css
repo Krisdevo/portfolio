@@ -377,6 +377,10 @@ footer p {
   color: #fff;
 }
 
+#about {
+  line-height: 1.8;
+}
+
 #preview_services h2 {
   text-align: center;
   margin-bottom: 2rem;
