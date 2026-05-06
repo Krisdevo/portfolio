@@ -28,7 +28,6 @@
 
 .scroll-haut {
   text-decoration: none;
-  font-weight: 600;
   z-index: 6;
   padding-left: 0.1em;
   padding-bottom: 0.1em;
@@ -38,17 +37,15 @@
   position: fixed;
   bottom: 30px;
   right: 20px;
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.42);
-  color: #4FD6A1 !important;
   width: 50px;
   height: 50px;
-  border-radius: 1rem;
-  text-align: center;
-  border: 3px solid #4FD6A1;
   animation: fade;
   animation-timeline: scroll(y);
   animation-range: 0 10%;
+}
+.scroll-haut img {
+  width: 100%;
+  height: 100%;
 }
 
 .btn {
@@ -333,7 +330,7 @@ footer p {
 .banner .terminal .terminal-text {
   width: 55%;
   color: #4fd6a1;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
   line-height: 1.5;
 }
