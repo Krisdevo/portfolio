@@ -64,9 +64,10 @@ header {
 
             a {
                 color: white;
-                font-weight: 600;
+                font-weight: 500;
                 text-decoration: none;
                 position: relative;
+                font-family: 'Silkscreen', cursive;
 
                 &::after {
                     content: "";
