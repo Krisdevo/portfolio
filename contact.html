@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio en ligne de Christopher Devaux (Krisdevo), développeur web spécialisé dans les sites vitrinces pour artisans et PME">
-    <title>Krisdevo - Contact</title>
-    <link rel="icon" href="./images/icone.png">
+    <meta name="description" content="Contactez Christopher Devaux, 
+développeur web freelance à Besançon. Devis gratuit pour votre 
+site vitrine, refonte WordPress ou maintenance.">
+    <title>KrisDevo — Contact | Développeur web freelance à Besançon</title>
+    <link rel="icon" href="./images/icone.webp">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -18,7 +19,7 @@
     <header>
 
         <div class="header-top">
-            <img src="./images/logo.png" alt="Logo du site" class="logo">
+            <img src="./images/logo.webp" alt="Logo du site" class="logo">
             <p>Concepteur de sites web</p>
         </div>
 
@@ -46,7 +47,7 @@
     </header>
     <main>
         <section id="intro">
-            <h1>Discutons de votre projet !</h1>
+            <h1>Prenons contact</h1>
             <p>Vous avez un projet en tête, une question ou une opportunité à me soumettre?<br>
                 N'hésitez pas à me décrire votre besoin même une idée floue est un bon point de départ. Pour les
                 demandes de devis,
@@ -55,55 +56,60 @@
             </p>
         </section>
         <section id="contact">
-            <section id="contact">
-                <form id="contact_form">
-                    <h2>Contact</h2>
-                    <div class="form_group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form_group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form_group">
-                        <label for="subject">Sujet</label>
-                        <select id="subject" name="subject" required>
-                            <option value="" disabled selected>Choisissez un sujet</option>
-                            <option value="Projet web">Projet web</option>
-                            <option value="Maintenance WordPress">Maintenance WordPress</option>
-                            <option value="Montage vidéo">Montage vidéo</option>
-                            <option value="Recrutement">Recrutement</option>
-                            <option value="Autre">Autre</option>
-                        </select>
-                    </div>
-                    <div class="form_group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6"
-                            placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
-                    </div>
-                    <!-- Honeypot - invisible pour les humains -->
-                    <input type="text" name="honeypot" id="honeypot" style="display:none" tabindex="-1"
-                        autocomplete="off">
-                    <button type="submit" class="btn" id="submit_btn">Envoyer</button>
-                    <p id="form_status"></p>
-                </form>
-                <div class="contact_info">
-                    <div class="title_contact_info">
-                        <div class="trait"></div>
-                        <h2>OU</h2>
-                        <div class="trait"></div>
-                    </div>
-                    <a href="mailto:contact@krisdevo.fr">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M20 20H4v-2h16v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-8-4h-4v-2h4v2Zm-4-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-8-2H6V8h2v2Zm10 0h-2V8h2v2Zm2-4H4V4h16v2Z" alt="icône d'email"/></svg>
-                        <span>krisdevo@outlook.com</span>
-                    </a>
-                    <a href="tel:+33612345678">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M21 22h-9v-2h9v2Zm-9-2h-2v-2h2v2Zm11 0h-2v-5h2v5Zm-13-2H8v-2h2v2Zm7-1h-4v-2h4v2Zm-9-1H6v-2h2v2Zm5-1h-2v-2h2v2Zm8 0h-4v-2h4v2ZM6 14H4v-2h2v2Zm5-1H9v-2h2v2Zm-7-1H2V3h2v9Zm5-1H7V7h2v4Zm2-4H9V3h2v4ZM9 3H4V1h5v2Z" alt="icône de téléphone"/></svg>
-                        <span> 06 12 27 42 53</span>
-                    </a>
+            <form id="contact_form">
+                <h2>M'écrire</h2>
+                <div class="form_group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
                 </div>
-            </section>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form_group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Choisissez un sujet</option>
+                        <option value="Projet web">Projet web</option>
+                        <option value="Maintenance WordPress">Maintenance WordPress</option>
+                        <option value="Montage vidéo">Montage vidéo</option>
+                        <option value="Recrutement">Recrutement</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+                </div>
+                <!-- Honeypot - invisible pour les humains -->
+                <input type="text" name="honeypot" id="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+                <button type="submit" class="btn" id="submit_btn">Envoyer</button>
+                <p id="form_status"></p>
+            </form>
+            <div class="contact_info">
+                <div class="title_contact_info">
+                    <div class="trait"></div>
+                    <h2>OU</h2>
+                    <div class="trait"></div>
+                </div>
+                <a href="mailto:krisdevo@outlook.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"  alt="icône d'email">
+                        <path
+                            d="M20 20H4v-2h16v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-8-4h-4v-2h4v2Zm-4-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-8-2H6V8h2v2Zm10 0h-2V8h2v2Zm2-4H4V4h16v2Z"
+                            />
+                    </svg>
+                    <span>krisdevo@outlook.com</span>
+                </a>
+                <a href="tel:+33612345678">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" alt="icône de téléphone">
+                        <path
+                            d="M21 22h-9v-2h9v2Zm-9-2h-2v-2h2v2Zm11 0h-2v-5h2v5Zm-13-2H8v-2h2v2Zm7-1h-4v-2h4v2Zm-9-1H6v-2h2v2Zm5-1h-2v-2h2v2Zm8 0h-4v-2h4v2ZM6 14H4v-2h2v2Zm5-1H9v-2h2v2Zm-7-1H2V3h2v9Zm5-1H7V7h2v4Zm2-4H9V3h2v4ZM9 3H4V1h5v2Z"
+                             />
+                    </svg>
+                    <span> 06 12 27 42 53</span>
+                </a>
+            </div>
         </section>
     </main>
     <footer>
