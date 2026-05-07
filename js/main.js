@@ -1,9 +1,11 @@
 // -------------------- PARTICULES --------------------
 
+const isMobile = window.innerWidth <= 768;
+
 tsParticles.load("tsparticles", {
     particles: {
         number: {
-            value: 150, // nombre de particules
+            value: isMobile ? 30 : 150, // 30 sur mobile, 150 sur desktop
         },
         color: {
             value: ["#4fd6a1", "#19A3E3"]
@@ -16,63 +18,15 @@ tsParticles.load("tsparticles", {
         },
         move: {
             enable: true,
-            speed: 0.6, // lent et doux
+            speed: isMobile ? 0.3 : 0.6, // plus lent sur mobile
             direction: "none",
             random: true,
         },
         links: {
-            enable: false // pas de lignes entre les particules
+            enable: false
         }
     },
     background: {
         color: "transparent"
     }
 });
-
-
-// -------------------- MAGIC TEXT --------------------
-
-function startTypewriter() {
-  const aboutText = document.querySelector(".terminal-text");
-  const paragraphs = aboutText.querySelectorAll("p");
-  
-  // Sauvegarde les textes et vide la zone (y compris le curseur existant)
-  const texts = Array.from(paragraphs).map(p => p.textContent.trim());
-  aboutText.innerHTML = "";
-
-  let pIndex = 0;
-  let charIndex = 0;
-
-  function typeWriter() {
-    if (pIndex < texts.length) {
-      if (!aboutText.children[pIndex]) {
-        aboutText.appendChild(document.createElement("p"));
-      }
-      let currentP = aboutText.children[pIndex];
-      let fullText = texts[pIndex];
-
-      if (charIndex < fullText.length) {
-        currentP.textContent += fullText.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, 10); // vitesse par caractère
-      } else {
-        pIndex++;
-        charIndex = 0;
-        setTimeout(typeWriter, 400); // pause avant le paragraphe suivant
-      }
-    } else {
-      // Curseur clignotant à la fin
-      const lastP = aboutText.lastElementChild;
-      const cursor = document.createElement("span");
-      cursor.classList.add("cursor");
-      lastP.appendChild(cursor);
-
-      document.dispatchEvent(new CustomEvent("typewriterDone"));
-    }
-  }
-
-  typeWriter();
-}
-
-
-document.addEventListener("DOMContentLoaded", startTypewriter);
