@@ -33,46 +33,51 @@ tsParticles.load("tsparticles", {
 // -------------------- MAGIC TEXT --------------------
 
 function startTypewriter() {
-  const aboutText = document.querySelector(".terminal-text");
-  const paragraphs = aboutText.querySelectorAll("p");
-  
-  // Sauvegarde les textes et vide la zone (y compris le curseur existant)
-  const texts = Array.from(paragraphs).map(p => p.textContent.trim());
-  aboutText.innerHTML = "";
+    const aboutText = document.querySelector(".terminal-text");
 
-  let pIndex = 0;
-  let charIndex = 0;
+    // Vérification : on ne lance pas si l'élément n'existe pas
+    if (!aboutText) return;
 
-  function typeWriter() {
-    if (pIndex < texts.length) {
-      if (!aboutText.children[pIndex]) {
-        aboutText.appendChild(document.createElement("p"));
-      }
-      let currentP = aboutText.children[pIndex];
-      let fullText = texts[pIndex];
+    const paragraphs = aboutText.querySelectorAll("p");
 
-      if (charIndex < fullText.length) {
-        currentP.textContent += fullText.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, 10); // vitesse par caractère
-      } else {
-        pIndex++;
-        charIndex = 0;
-        setTimeout(typeWriter, 400); // pause avant le paragraphe suivant
-      }
-    } else {
-      // Curseur clignotant à la fin
-      const lastP = aboutText.lastElementChild;
-      const cursor = document.createElement("span");
-      cursor.classList.add("cursor");
-      lastP.appendChild(cursor);
+    const texts = Array.from(paragraphs).map(p => p.textContent.trim());
+    aboutText.innerHTML = "";
 
-      document.dispatchEvent(new CustomEvent("typewriterDone"));
+    let pIndex = 0;
+    let charIndex = 0;
+
+    function typeWriter() {
+        if (pIndex < texts.length) {
+            if (!aboutText.children[pIndex]) {
+                aboutText.appendChild(document.createElement("p"));
+            }
+            let currentP = aboutText.children[pIndex];
+            let fullText = texts[pIndex];
+
+            if (charIndex < fullText.length) {
+                currentP.textContent += fullText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 20);
+            } else {
+                pIndex++;
+                charIndex = 0;
+                setTimeout(typeWriter, 400);
+            }
+        } else {
+            // Curseur clignotant à la fin
+            const lastP = aboutText.lastElementChild;
+            const cursor = document.createElement("span");
+            cursor.classList.add("cursor");
+            lastP.appendChild(cursor);
+
+            document.dispatchEvent(new CustomEvent("typewriterDone"));
+        }
     }
-  }
 
-  typeWriter();
+    typeWriter();
 }
 
 
-document.addEventListener("DOMContentLoaded", startTypewriter);
+document.addEventListener("DOMContentLoaded", () => {
+    requestAnimationFrame(startTypewriter);
+});
