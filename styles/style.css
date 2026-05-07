@@ -82,7 +82,7 @@ h3 {
 h1 {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -381,9 +381,21 @@ footer p {
   line-height: 1.8;
 }
 
+#preview_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #preview_services h2 {
   text-align: center;
   margin-bottom: 2rem;
+}
+#preview_services p {
+  margin: 2rem 0;
+  text-align: center;
+}
+#preview_services a {
+  align-self: center;
 }
 #preview_services .card_container {
   display: flex;
@@ -396,7 +408,8 @@ footer p {
   background-color: rgba(0, 0, 0, 0.42);
   border-radius: 1rem;
   width: 100%;
-  min-height: 600px;
+  min-height: 400px;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -416,17 +429,18 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  flex: 1;
   gap: 1rem;
 }
 #preview_services .card_container .card .card_content h3 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 #preview_services .card_container .card .card_content p {
   margin: 1rem auto;
   font-size: 0.8rem;
+  text-align: left;
 }
 
 #preview_abilities h2 {
@@ -488,11 +502,14 @@ footer p {
   color: #4FD6A1;
 }
 #preview_abilities .clotho {
-  margin-top: 2rem;
+  margin: 2rem 0;
   text-align: center;
 }
-#preview_abilities .clotho p {
+#preview_abilities .clotho .clotho_text {
   margin-bottom: 2rem;
+}
+#preview_abilities .clotho .clotho_text p {
+  text-align: left;
 }
 #preview_abilities .clotho a {
   margin: 2rem auto;
@@ -523,11 +540,11 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
     gap: 2rem;
   }
   #preview_services .card_container .card {
     width: 45%;
-    height: 710px;
   }
   #preview_abilities .card_container {
     flex-direction: row;
@@ -552,7 +569,6 @@ footer p {
   }
   #preview_services .card_container .card {
     width: 35%;
-    height: 710px;
   }
   #preview_abilities .card_container {
     justify-content: space-evenly;
@@ -563,9 +579,6 @@ footer p {
   }
   #preview_abilities .clotho {
     margin: 4rem auto;
-  }
-  #preview_abilities .clotho p {
-    margin-bottom: 3rem;
   }
   #preview_abilities .clotho img {
     margin-bottom: 3rem;
@@ -596,7 +609,6 @@ footer p {
   }
   #preview_services .card_container .card {
     width: 35%;
-    height: 710px;
   }
   #preview_abilities .card_container {
     justify-content: space-evenly;
