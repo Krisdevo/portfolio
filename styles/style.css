@@ -925,15 +925,18 @@ footer p {
   background-color: rgba(0, 0, 0, 0.42);
   opacity: 0.4;
   transition: opacity 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 #portfolio .card_container .card .card_action button.active {
   opacity: 1;
+  background-color: transparent;
 }
 #portfolio .card_container .card .card_action button img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-tap-highlight-color: transparent;
 }
 #portfolio .card_container .card .card_content {
   width: 100%;
