@@ -776,6 +776,10 @@ footer p {
     font-size: 0.9rem;
   }
 }
+:root {
+  --icon-color: #ffffff;
+}
+
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -926,9 +930,16 @@ footer p {
   transition: opacity 0.3s ease;
   -webkit-tap-highlight-color: transparent;
 }
+#portfolio .card_container .card .card_action button svg {
+  pointer-events: none;
+  fill: var(--icon-color) !important;
+}
 #portfolio .card_container .card .card_action button.active {
   opacity: 1;
   background-color: transparent;
+}
+#portfolio .card_container .card .card_action button.active svg {
+  fill: var(--icon-color) !important;
 }
 #portfolio .card_container .card .card_action button img {
   height: 100%;
@@ -936,6 +947,11 @@ footer p {
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+       user-select: none;
+  pointer-events: none;
 }
 #portfolio .card_container .card .card_content {
   width: 100%;
@@ -1017,7 +1033,8 @@ footer p {
   #portfolio .card_container .card .card_header .header_text {
     align-items: flex-start;
   }
-  #portfolio .card_container .card .card_header .header_text h2, #portfolio .card_container .card .card_header .header_text h3 {
+  #portfolio .card_container .card .card_header .header_text h2,
+  #portfolio .card_container .card .card_header .header_text h3 {
     text-align: left;
   }
 }
