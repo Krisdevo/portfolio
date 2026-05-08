@@ -180,10 +180,14 @@
                     opacity: 0.4;
                     transition: opacity 0.3s ease;
                     -webkit-tap-highlight-color: transparent;
+                    outline: none;
 
                     svg {
                         pointer-events: none;
-                        fill: var(--icon-color) !important;
+
+                        path {
+                            fill: white !important;
+                        }
                     }
 
                     &.active {
@@ -191,7 +195,9 @@
                         background-color: transparent;
 
                         svg {
-                            fill: var(--icon-color) !important;
+                            path {
+                                fill: white !important;
+                            }
                         }
                     }
 

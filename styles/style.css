@@ -929,17 +929,20 @@ footer p {
   opacity: 0.4;
   transition: opacity 0.3s ease;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 #portfolio .card_container .card .card_action button svg {
   pointer-events: none;
-  fill: var(--icon-color) !important;
+}
+#portfolio .card_container .card .card_action button svg path {
+  fill: white !important;
 }
 #portfolio .card_container .card .card_action button.active {
   opacity: 1;
   background-color: transparent;
 }
-#portfolio .card_container .card .card_action button.active svg {
-  fill: var(--icon-color) !important;
+#portfolio .card_container .card .card_action button.active svg path {
+  fill: white !important;
 }
 #portfolio .card_container .card .card_action button img {
   height: 100%;
