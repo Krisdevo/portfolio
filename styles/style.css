@@ -315,12 +315,11 @@ footer p {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 0.5rem;
   border-radius: 1rem;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.4235294118);
 }
 .banner .terminal .pic-container {
-  width: 45%;
+  width: 35%;
 }
 .banner .terminal .pic-container img {
   background-image: center/cover;
@@ -328,9 +327,9 @@ footer p {
   height: 9rem;
 }
 .banner .terminal .terminal-text {
-  width: 55%;
+  width: 60%;
   color: #4fd6a1;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.5;
 }
