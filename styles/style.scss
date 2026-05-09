@@ -1,11 +1,11 @@
-@import "./partials/base";
-@import "./partials/variables/colors";
-@import "./partials/variables/font";
-@import "./partials/components/burger";
-@import "./partials/components/header";
-@import "./partials/components/footer";
-@import "./partials/pages/home";
-@import "./partials/pages/profil";
-@import "./partials/pages/portfolio";
-@import "./partials/pages/contact";
+@use "./partials/base";
+@use "./partials/variables/colors";
+@use "./partials/variables/font";
+@use "./partials/components/burger";
+@use "./partials/components/header";
+@use "./partials/components/footer";
+@use "./partials/pages/home";
+@use "./partials/pages/profil";
+@use "./partials/pages/portfolio";
+@use "./partials/pages/contact";
 
