@@ -179,23 +179,16 @@
                     background-color: $transparent;
                     opacity: 0.4;
                     transition: opacity 0.3s ease;
-                    -webkit-tap-highlight-color: transparent;
-                    outline: none;
+
 
 
                     &.active {
                         opacity: 1;
                         background-color: $transparent;
 
-                        svg {
-                            path {
-                                fill: white !important;
-                            }
-                        }
 
-                        &.active:active {
-                            opacity: 1; // ← si le bouton est actif, garde opacity 1
-                        }
+
+
                     }
 
 
@@ -203,11 +196,7 @@
                         height: 100%;
                         width: 100%;
                         object-fit: contain;
-                        -webkit-tap-highlight-color: transparent;
-                        -webkit-user-select: none;
-                        -webkit-touch-callout: none;
-                        user-select: none;
-                        pointer-events: none;
+
                     }
                 }
             }

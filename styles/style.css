@@ -928,30 +928,16 @@ footer p {
   background-color: rgba(0, 0, 0, 0.42);
   opacity: 0.4;
   transition: opacity 0.3s ease;
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
 }
 #portfolio .card_container .card .card_action button.active {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.42);
-}
-#portfolio .card_container .card .card_action button.active svg path {
-  fill: white !important;
-}
-#portfolio .card_container .card .card_action button.active.active:active {
-  opacity: 1;
 }
 #portfolio .card_container .card .card_action button img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-       user-select: none;
-  pointer-events: none;
 }
 #portfolio .card_container .card .card_content {
   width: 100%;
