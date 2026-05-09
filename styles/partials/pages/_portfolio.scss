@@ -177,7 +177,7 @@
                     height: auto;
                     padding: 0.5rem;
                     background-color: $transparent;
-                    opacity: 0.4;
+                    opacity: 0.6;
                     transition: opacity 0.3s ease;
 
 
@@ -185,9 +185,6 @@
                     &.active {
                         opacity: 1;
                         background-color: $transparent;
-
-
-
 
                     }
 
