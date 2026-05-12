@@ -1,6 +1,5 @@
-@use "./variables/colors";
-@use "./variables/font";
-
+@use './variables/colors' as *;
+@use './variables/font' as *;
 * {
     box-sizing: border-box;
     padding: 0;
@@ -55,7 +54,7 @@
 .btn {
     cursor: pointer;
     padding: 0.8rem 1.5rem;
-    background: $btn;
+    background: #0F2763;
     color: white;
     font-weight: 600;
     border: 1px solid $green;
@@ -80,7 +79,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Space Grotesk';
     font-weight: 700;
 }
 
