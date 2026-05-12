@@ -465,6 +465,9 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+#preview_abilities .card_container .card .card_content h3 {
+  margin: 1rem 0;
+}
 #preview_abilities .card_container .card .card_content ul {
   padding: 0;
 }
