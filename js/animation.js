@@ -1,5 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
+// Rafraîchit ScrollTrigger après le chargement complet de la page
+window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+});
+
 // Cache les boutons au départ
 gsap.set(".cta-group .btn", { 
     opacity: 0, 

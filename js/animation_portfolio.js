@@ -1,6 +1,11 @@
 // -------------------- GSAP PLUGINS --------------------
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
+// Rafraîchit ScrollTrigger après le chargement complet de la page
+window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+});
+
 // -------------------- DETECTION MOBILE --------------------
 const isMobile = window.innerWidth < 768;
 

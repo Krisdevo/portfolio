@@ -1,6 +1,11 @@
 // -------------------- GSAP PLUGINS --------------------
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
+// Rafraîchit ScrollTrigger après le chargement complet de la page
+window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+});
+
 // -------------------- SECTION INTRO --------------------
 
 gsap.set("#intro h1", { opacity: 0, y: 40 });
