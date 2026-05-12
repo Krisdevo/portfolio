@@ -70,11 +70,12 @@ h2,
 h3 {
   font-family: "Space Grotesk";
   font-weight: 700;
+  margin: 2rem 0;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   font-size: 1.8rem;
 }
 
@@ -91,7 +92,7 @@ h3 {
 
 section {
   width: 90%;
-  margin: auto;
+  margin: 3rem auto;
   padding: 2rem 0;
   color: white;
 }
@@ -236,7 +237,6 @@ header .header-top p {
     font-weight: 500;
     text-decoration: none;
     position: relative;
-    font-family: "Silkscreen", cursive;
   }
   header .desktop-nav a::after {
     content: "";
@@ -370,6 +370,10 @@ footer p {
 }
 
 #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 1.8;
 }
 
@@ -380,10 +384,10 @@ footer p {
 }
 #preview_services h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 #preview_services p {
-  margin: 2rem 0;
+  margin: 4rem 0 2rem 0;
   text-align: center;
 }
 #preview_services a {
@@ -498,7 +502,7 @@ footer p {
   text-align: center;
 }
 #preview_abilities .clotho .clotho_text {
-  margin-bottom: 2rem;
+  margin: 5rem 0;
 }
 #preview_abilities .clotho .clotho_text p {
   text-align: left;
