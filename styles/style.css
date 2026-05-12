@@ -66,28 +66,30 @@ body {
 }
 
 h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1,
 h2,
 h3 {
   font-family: "Space Grotesk";
-  font-weight: 700;
-  margin: 2rem 0;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 4rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 section {
@@ -149,7 +151,6 @@ section p {
 
 .burger-nav a {
   font-size: 1.8rem;
-  font-family: "Silkscreen", cursive;
   text-decoration: none;
   color: white;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -237,6 +238,7 @@ header .header-top p {
     font-weight: 500;
     text-decoration: none;
     position: relative;
+    font-size: 1.2rem;
   }
   header .desktop-nav a::after {
     content: "";
@@ -384,7 +386,7 @@ footer p {
 }
 #preview_services h2 {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 #preview_services p {
   margin: 4rem 0 2rem 0;
@@ -670,7 +672,6 @@ footer p {
 }
 #services .card_container .card .card_content h3 {
   margin-top: 0;
-  font-size: 1.5rem;
   text-align: center;
 }
 #services .card_container .card .card_content p {
@@ -715,6 +716,9 @@ footer p {
   font-family: "Cinzel Decorative";
   color: #F59E0B;
   margin-top: 2rem;
+}
+#recruit .presentation p {
+  margin: 1rem 0;
 }
 #recruit a {
   margin: 2rem auto;
@@ -763,9 +767,6 @@ footer p {
   #services .card_container {
     gap: 4rem;
   }
-  #services .card_container .card .card_content h3 {
-    font-size: 1.8rem;
-  }
   #services .card_container .card .card_content p {
     font-size: 1rem;
   }
@@ -787,7 +788,7 @@ footer p {
   margin-bottom: 2rem;
 }
 #portfolio p {
-  margin: 2rem auto;
+  margin-bottom: 3rem;
 }
 #portfolio a {
   text-align: center;
@@ -829,11 +830,10 @@ footer p {
   gap: 0.2rem;
 }
 #portfolio .card_container .card .card_header .header_text h2 {
-  font-size: 1.5rem;
   font-weight: bold;
 }
 #portfolio .card_container .card .card_header .header_text h3 {
-  font-size: 1.2rem;
+  margin: 1rem 0;
   text-align: center;
 }
 #portfolio .card_container .card .img_wrapper {
@@ -999,6 +999,9 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  #portfolio p {
+    text-align: center;
+  }
   #portfolio .card_container .card {
     width: 60%;
     min-height: 500px;
@@ -1043,7 +1046,6 @@ footer p {
 }
 #intro p {
   margin-top: 1.5rem;
-  text-align: center;
   margin: auto;
   line-height: 1.6;
 }

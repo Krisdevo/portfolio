@@ -1,5 +1,6 @@
 @use './variables/colors' as *;
 @use './variables/font' as *;
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -77,28 +78,31 @@ body {
 }
 
 h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1,
 h2,
 h3 {
     font-family: 'Space Grotesk';
-    font-weight: 700;
-    margin:2rem 0;
+
 }
 
 h1 {
     text-align: center;
     margin-bottom: 4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 section {
@@ -118,7 +122,7 @@ section {
 
 @media screen and (min-width: 1024px) {
     section {
-         width: 1000px;
+        width: 1000px;
     }
 
 }
