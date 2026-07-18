@@ -9,6 +9,15 @@
   font-family: "Inter";
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #4FD6A1;
+}
+
 #tsparticles {
   position: fixed;
   top: 0;
